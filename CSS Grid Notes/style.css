@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: plum;
+    background-color: rgba(244, 244, 227, 0.827);
+}
+
+.grid-container {
+    max-width: 960px;
+    margin: 100px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: reapeat(auto-fill, 200, 1fr);
+    gap: 10px;
+}
+
+.item {
+    background-color: lightgoldenrodyellow;
+    color: light plum;
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid;
+}
+@media(max-width:500px){
+    .container {
+        grid-template: 1fr;
+    }
+}
